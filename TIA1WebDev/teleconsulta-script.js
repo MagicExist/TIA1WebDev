@@ -23,9 +23,9 @@ document.getElementById('fotoDoctor').addEventListener('change', function(event)
  */
 document.addEventListener("DOMContentLoaded", function () {
     // Ruta de la imagen y el audio dentro de la misma carpeta
-    const imagenPaciente   = "teleconsulta-foto-paciente.png";  // Nombre de la imagen en la misma carpeta
+    const imagenPaciente   = "imgPaciente.jpg";  // Nombre de la imagen en la misma carpeta
     const imagenDoctor     = "imgDoctor.jpg";    // Nombre de la imagen en la misma carpeta
-    const audioDiagnostico = "teleconsulta-diagnostico.mp3";    // Nombre del audio en la misma carpeta
+    const audioDiagnostico = "AudioEjercicio.mp3";    // Nombre del audio en la misma carpeta
 
     // Cargar imagen del paciente automáticamente
     const imgPaciente = document.getElementById("previewPaciente");
