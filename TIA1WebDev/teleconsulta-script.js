@@ -58,6 +58,10 @@ function mostrarImagen(event, previewId) {
 
 /** Botón de envío del foormulario */
 const boton = document.getElementById("miBoton");
+const idPaciente = document.getElementById("identificacionPaciente")
+const idDoctor = document.getElementById("identificacionDoctor")
+
+
 
 /** 
  *  Acción de envio del formulario al Servidor (simulación)
@@ -74,7 +78,12 @@ boton.addEventListener("click", function() {
      *  1.- Si los campos están llenos, simular envío con mensaje exitoso 
      *  2.- Si alguno de los 2 campos no tiene información, enviar aviso de alarma
      */
-    alert("¡Botón clickeado!"); 
+    if(idPaciente.value == "" && idPaciente.value == ""){
+        alert("Porfavor llena todos los campos")
+    }
+    else{
+        alert("Consulta Guardada!!"); 
+    }
 });
 
 

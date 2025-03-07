@@ -21,27 +21,30 @@
                 <h4>Datos del Paciente</h4>
                 <label for="identificacionPaciente" class="form-label">Identificación:</label>
                 <input type="number" class="form-control" id="identificacionPaciente" required>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nombrePaciente" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombrePaciente" required>
 
-                <label for="nombrePaciente" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombrePaciente" required>
+                        <label for="edadPaciente" class="form-label mt-2">Edad:</label>
+                        <input type="number" class="form-control" id="edadPaciente" required>
+                        
+                    </div>
+                    <div class="col-6">
+                        <label for="apellidoPaciente">Apellido:</label>
+                        <input type="text" class="form-control" id="apellidoPaciente" required/>
 
-                <label for="apellidoPaciente">Apellido:</label>
-                <input type="text" class="form-control" id="apellidoPaciente" required/>
-
-                <label for="edadPaciente" class="form-label mt-2">Edad:</label>
-                <input type="number" class="form-control" id="edadPaciente" required>
-
-                <label for="sintomasPaciente" class="form-label mt-2">Sintomas:</label>
-                <textarea id="sintomasPaciente" class="form-control">
-
-                </textarea>
-
+                        <label for="sintomasPaciente" class="form-label mt-2">Sintomas:</label>
+                        <textarea id="sintomasPaciente" class="form-control"> </textarea>
+                    </div>
+                </div>
+                
                 <label for="generoPaciente" class="form-label mt-2">Genero:</label>
                 <select id="generoPaciente" class="form-control">
                     <option>Masculino</option>
                     <option>Femenino</option>
                 </select>
-
+                
                 <label for="fotoPaciente" class="form-label mt-2">Foto del Paciente:</label>
                 <input type="file" class="form-control" id="fotoPaciente" accept="image/*" required>
                 <img id="previewPaciente" class="img-preview mt-2">
@@ -60,7 +63,10 @@
                 <input type="text" class="form-control" id="apellidoDoctor" required/>
                 
                 <label for="especialidad" class="form-label mt-2">Especialidad:</label>
-                <input type="text" class="form-control" id="especialidad">
+                <select id="generoPaciente" class="form-control">
+                    <option>Cardiologia</option>
+                    <option>Dermatologia</option>
+                </select>
 
                 <label for="fotoDoctor" class="form-label mt-2">Foto del Doctor:</label>
                 <input type="file" class="form-control" id="fotoDoctor" accept="image/*" required>
